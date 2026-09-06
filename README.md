@@ -1,6 +1,6 @@
-# 📝 Markdown Converter — MD to Word Online
+# Markdown Converter — Free Online Tool
 
-**Free Markdown Editor & Converter.** Write or paste Markdown, see a real-time preview, and export to Word (.docx) instantly. Import existing .docx files and get clean Markdown. No sign-up, no ads, 100% client-side.
+**Markdown Converter.** Markdown editor with preview. Convert to Word (.docx) or import a .docx to Markdown. No sign-up, no ads, 100% client-side.
 
 🌐 **Demo en vivo / Live demo:** [miguelacm.es/tools/markdown-converter](https://miguelacm.es/tools/markdown-converter)
 
@@ -13,16 +13,9 @@
 
 ## ✨ Features
 
-- 📝 **Editor Markdown / Markdown editor:** escribe o pega Markdown con vista previa renderizada en tiempo real / write or paste Markdown with rendered real-time preview
-- 📄 **MD → DOCX:** exporta a Word compatible con Microsoft Word, LibreOffice y Google Docs / export to Word compatible with Microsoft Word, LibreOffice and Google Docs
-- 🔄 **DOCX → MD:** importa un .docx existente y obtén Markdown limpio / import an existing .docx and get clean Markdown
-- 🌐 **Vista HTML / HTML view:** copia el HTML generado listo para cualquier web o CMS / copy the generated HTML ready for any website or CMS
-- 📊 **Estadísticas / Document stats:** palabras, líneas, títulos, links, imágenes, tablas, bloques de código / words, lines, headings, links, images, tables, code blocks
-- ⬇️ **Descarga / Download:** guarda el resultado como .docx o .md / save the result as .docx or .md
-- 🖱️ **Drag & drop:** arrastra archivos .md o .docx sobre el editor / drag .md or .docx files onto the editor
-- ⚡ **Zero dependencies:** generación .docx puro JS (Open XML + ZIP sin librerías) / pure JS .docx generation (Open XML + ZIP without libraries)
-- 🔒 **Privacidad total / Full privacy:** ningún dato sale de tu navegador / no data leaves your browser
-- 📦 **Embebible / Embeddable:** iframe listo para cualquier web / iframe ready for any website
+- **📝 Live preview:** Write Markdown and see the rendered result as you type.
+- **📄 Word both ways:** Export to .docx or import a .docx back to Markdown.
+- **🔒 100% private:** Conversion runs locally in your browser.
 
 ---
 
@@ -48,8 +41,6 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/markdown-converter
 
 ## 📦 Embed on your website
 
-### Iframe (plug & play)
-
 ```html
 <iframe
   src="https://miguelacm.es/embed/markdown-converter"
@@ -65,11 +56,11 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/markdown-converter
 
 ```html
 <a href="https://miguelacm.es/tools/markdown-converter" target="_blank" rel="noopener">
-  Convertidor Markdown a Word gratis por MACM
+  Markdown Converter — free tool by MACM
 </a>
 ```
 
-> 💡 The link option generates a real backlink that benefits the project. Recommended if your platform supports custom HTML.
+> 💡 The link option generates a real backlink that benefits the project.
 
 ---
 
@@ -77,11 +68,10 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/markdown-converter
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Next.js](https://nextjs.org) | 16 | React framework + SSG |
+| [Next.js](https://nextjs.org) | 16 | React framework |
 | [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
 | [Tailwind CSS](https://tailwindcss.com) | 4 | Styling |
 | [react-icons](https://react-icons.github.io/react-icons/) | 5 | Icons |
-| Pure JS | — | MD→HTML, DOCX generation (Open XML + ZIP), DOCX→MD parser |
 
 ---
 
