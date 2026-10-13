@@ -11,6 +11,7 @@ import {
   FiCode,
 } from "react-icons/fi";
 import { MdSwapHoriz } from "react-icons/md";
+import { sanitizeHtml } from "@/lib/sanitizeHtml";
 
 interface Props {
   locale?: string;
@@ -152,8 +153,8 @@ function mdToHtml(md: string): string {
 function htmlToMd(html: string): string {
   // Create a temporary DOM node to leverage the browser's HTML parser
   if (typeof document === "undefined") return html;
-  const div = document.createElement("div");
-  div.innerHTML = html;
+  // DOMParser builds an inert document: unlike innerHTML it does not load images or run onerror handlers.
+  const div = new DOMParser().parseFromString(html, "text/html").body;
 
   function nodeToMd(node: Node, depth = 0): string {
     if (node.nodeType === Node.TEXT_NODE) {
@@ -709,7 +710,7 @@ export default function MarkdownConverter({ locale = "es" }: Props) {
   // Rendered HTML from markdown
   const renderedHtml = useMemo(() => {
     if (!mdInput.trim()) return "";
-    return mdToHtml(mdInput);
+    return sanitizeHtml(mdToHtml(mdInput));
   }, [mdInput]);
 
   // Stats
